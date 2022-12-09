@@ -1,0 +1,21 @@
+version: 2
+
+models:
+  - name: gold_delays
+    description: Contains the average delay for each flight and airport in 2014
+    columns:
+      - name: TripId
+        description: Primary key
+        tests:
+          - unique
+          - not_null
+      - name: LocaleDate
+        description: Local date of the flight
+      - name: delay
+        description: Delay of the flight
+      - name: Distance
+        description: Distance of the flight
+      - name: OriginAirportKey
+        description: Foreign Key for the Origin airport
+      - name: DestinationAirportKey
+        description: Foreign Key for the Destination airport
