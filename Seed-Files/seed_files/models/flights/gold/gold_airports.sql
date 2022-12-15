@@ -4,4 +4,4 @@ SELECT
     City,
     State,
     Country
-FROM {{ ref('silver_airports') }}
+FROM {{ ref('airports') }}

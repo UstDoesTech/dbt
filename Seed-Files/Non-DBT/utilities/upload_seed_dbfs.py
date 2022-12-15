@@ -18,11 +18,8 @@ base_url = f'https://{host}/api/2.0/dbfs/put'
 file_name = "airports.csv"
 
 file_location = (
-    # os.environ["DefaultWorkingDirectory"]
-    # + 
     "../seeds/"
     + file_name
-    # + os.environ["Hydr8WheelCurrentName"]
 )
 print(file_location)
 
